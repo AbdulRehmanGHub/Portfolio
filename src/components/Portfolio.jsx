@@ -1,4 +1,3 @@
-
 import React from "react";
 import num1 from '../assets/portfolio/tribute website.jpg'
 import num2 from '../assets/portfolio/github profile finder.jpg'
@@ -12,36 +11,42 @@ const Portfolio = () => {
     const portfolios = [
         {
             id: 1,
+            name: "Tribute Website",
             src: num1,
             demoLink: "https://abdulrehmanghub.github.io/Tribute-to-AQ-Khan__Web-dev-Project/",
             codeLink: "https://github.com/AbdulRehmanGHub/Tribute-to-AQ-Khan__Web-dev-Project"
         },
         {
             id: 2,
+            name: "GitHub Profile Finder",
             src: num2,
             demoLink: "https://abdulrehmanghub.github.io/GitHub-Profile-Finder/",
             codeLink: "https://github.com/AbdulRehmanGHub/GitHub-Profile-Finder"
         },
         {
             id: 3,
+            name: "Image Slider",
             src: num3,
             demoLink: "https://abdulrehmanghub.github.io/Image-Slider/",
             codeLink: "https://github.com/AbdulRehmanGHub/Image-Slider"
         },
         {
             id: 4,
+            name: "Random Color Generator",
             src: num4,
             demoLink: "https://AbdulRehmanGHub.github.io/Auto-Color-Generator",
             codeLink: "https://github.com/AbdulRehmanGHub/Auto-Color-Generator"
         },
         {
             id: 5,
+            name: "Job Form",
             src: num5,
             demoLink: "https://AbdulRehmanGHub.github.io/Job-Form",
             codeLink: "https://github.com/AbdulRehmanGHub/Job-Form"
         },
         {
             id: 6,
+            name: "Digital Clock",
             src: num6,
             demoLink: "https://abdulrehmanghub.github.io/Digital-Cock__Web-Dev-Project/",
             codeLink: "https://github.com/AbdulRehmanGHub/Digital-Cock__Web-Dev-Project"
@@ -57,10 +62,13 @@ const Portfolio = () => {
                 </div>
                 <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-8">
                     {
-                        portfolios.map(({ id, src, demoLink, codeLink }) => (
-                            <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
+                        portfolios.map(({ id, name, src, demoLink, codeLink }) => (
+                            <div key={id} className="shadow-md shadow-gray-600 rounded-lg relative">
                                 <img src={src} alt="" className="rounded-md duration-200 hover:scale-105" />
-                                <div className="flex items-center justify-center">
+                                <div className="absolute inset-x-0 bottom-0 bg-black bg-opacity-50 py-2 px-4 text-center text-white">
+                                    <p className="text-lg font-semibold">{name}</p>
+                                </div>
+                                <div className="flex items-center justify-center mt-2">
                                     <a href={demoLink} target="_blank" rel="noopener noreferrer" className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">Demo</a>
                                     <a href={codeLink} target="_blank" rel="noopener noreferrer" className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">Code</a>
                                 </div>
