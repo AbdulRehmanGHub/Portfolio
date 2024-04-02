@@ -1,3 +1,5 @@
+import React, { useEffect } from 'react';
+
 import About from "./components/About";
 import Experience from "./components/Experience";
 import Home from "./components/Home";
@@ -7,6 +9,10 @@ import Contact from "./components/Contact";
 import SocialLinks from "./components/SocialLinks";
 
 function App() {
+    useEffect(() => {
+        document.title = "Dev Abdul Rehman";
+    }, []);
+
     return (
         <div>
            <NavBar />
