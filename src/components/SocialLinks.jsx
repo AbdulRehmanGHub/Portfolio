@@ -34,17 +34,17 @@ const SocialLinks = () => {
             ),
             href: 'mailto:foo@gmail.com/',
         },
-        {
-            id: 4,
-            child: (
-                <>
-                    Resume <BsFillPersonLinesFill size={30} />
-                </>
-            ),
-            href: '/Abdul_Rehman_Resume.pdf',
-            style: 'rounded-br-md',
-            download: true,
-        }
+        // {
+        //     id: 4,
+        //     child: (
+        //         <>
+        //             Resume <BsFillPersonLinesFill size={30} />
+        //         </>
+        //     ),
+        //     href: '/Abdul_Rehman_Resume.pdf',
+        //     style: 'rounded-br-md',
+        //     download: true,
+        // }
     ];
 
     return (
