@@ -1,15 +1,15 @@
 
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 const NavBar = () => {
     const [nav, setNav] = useState(false);
 
     return (
-        <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed">
+        <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed z-10">
             <div>
-                <h1 className="text-5xl font-signature ml-2">Dev. Abdul Rehman</h1>
+                <h1 className="text-4xl font-signature ml-2 cursor-default">Dev. Abdul Rehman</h1>
             </div>
             <ul className="hidden md:flex">
                 <NavItem to="home" text="Home" />
