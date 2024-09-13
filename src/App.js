@@ -12,6 +12,10 @@ function App() {
         document.title = "Dev Abdul Rehman";
     }, []);
 
+    useEffect(() => {
+        document.title = "Dev Abdul Rehman";
+    }, []);
+
     return (
         <div>
             <NavBar />

@@ -1,6 +1,16 @@
 
+
 import React from "react";
 
+import html from "../assets/skills/html.png";
+import css from "../assets/skills/css.png";
+import javascript from "../assets/skills/javascript.png";
+import tailwind from "../assets/skills/tailwind.png";
+import php from "../assets/skills/php.png";
+import reactImage from "../assets/skills/react.png";
+import node from "../assets/skills/node.png";
+import mysql from "../assets/skills/mysql.png";
+import github from "../assets/skills/github.png";
 import html from "../assets/skills/html.png";
 import css from "../assets/skills/css.png";
 import javascript from "../assets/skills/javascript.png";
@@ -88,5 +98,7 @@ const Experience = () => {
         </div>
     );
 };
+
+export default Experience;
 
 export default Experience;
